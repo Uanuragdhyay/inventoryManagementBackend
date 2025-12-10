@@ -113,4 +113,7 @@ spring.jpa.hibernate.ddl-auto=update
 ## Author
 
 **Anurag Upadhyay**  
-GitHub: https://github.com/Uanuragdhyay
+
+## **💌 Contact & Support**
+📧 Email: [uanurag@gmail.com](mailto:uanurag@gmail.com)  
+📌 GitHub: [GitHub Profile](https://github.com/Uanuragdhyay)
