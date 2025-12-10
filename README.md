@@ -1,19 +1,42 @@
-🎉 Inventory Management Backend
-⚡ A Simple & Clean Spring Boot REST API for Managing Products
+# Inventory Management Backend (Spring Boot)
 
-Welcome to the Inventory Management Backend — a lightweight yet powerful REST API built using Spring Boot, perfect for learning backend development or showcasing clean project structure in your portfolio.
+> A clean, modular, and beginner-friendly **Spring Boot REST API** for handling product inventory.
 
-🌈 Tech Stack
-| Technology              | Description                     |
-| ----------------------- | ------------------------------- |
-| ☕ **Java**              | Main programming language       |
-| 🌱 **Spring Boot**      | Backend framework               |
-| 🗄️ **Spring Data JPA** | ORM layer for database handling |
-| 🛢️ **H2 / MySQL**      | Database (configurable)         |
-| 🧪 **JUnit**            | Testing framework               |
+## About
 
-📁 Project Structure (Easy & Understandable)
+This repository contains a **Java Spring Boot backend application** designed for managing product inventory data.  
+It provides RESTful APIs for creating, updating, retrieving, and deleting products.  
+The project follows a clean, modular structure with:
 
+- **Controller layer** — Handles incoming REST API requests  
+- **Service layer** — Business logic  
+- **Repository layer** — Database operations via Spring Data JPA  
+- **Model layer** — Entity structure  
+
+## Features
+
+- Add, update, delete & fetch products  
+- Layered architecture (Controller → Service → Repository)  
+- Built with Spring Boot  
+- Supports H2 (default) and MySQL  
+- Fast backend using embedded Tomcat  
+- Ready for unit testing  
+- Clean & readable codebase  
+
+## Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Java | Programming language |
+| Spring Boot | Backend framework |
+| Spring Data JPA | ORM for DB operations |
+| H2 / MySQL | Database |
+| JUnit | Testing framework |
+| Maven | Build tool |
+
+## Project Structure
+
+```
 src/
  └── main/
      ├── java/com/example/inventory_management/
@@ -29,105 +52,65 @@ src/
      │
      └── resources/
          ├── application.properties
-         └── data.sql   (optional)
+         └── data.sql (optional)
+```
 
+## API Endpoints
 
-Each layer has a clear responsibility:
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| GET | /products | Fetch all products |
+| GET | /products/{id} | Fetch product by ID |
+| POST | /products | Create a new product |
+| PUT | /products/{id} | Update an existing product |
+| DELETE | /products/{id} | Delete a product |
 
-Controller → Handles API requests
+## Getting Started
 
-Service → Business logic
-
-Repository → Database operations
-
-Model → Entity class
-
-🚀 Features
-
-✨ Add, update, delete & fetch products
-📦 Store product details (name, quantity, price)
-🔍 Search product by ID
-💡 Layered architecture (Controller → Service → Repository)
-⚡ Powered by Spring Boot’s fast embedded Tomcat server
-🧪 Ready for unit testing
-
-🔥 REST API Endpoints
-📦 Product Management
-Method	Endpoint	Description
-GET	/products	Fetch all products
-GET	/products/{id}	Fetch product by ID
-POST	/products	Add a new product
-PUT	/products/{id}	Update existing product
-DELETE	/products/{id}	Delete product
-🧠 Backend Flow (Simple Diagram)
-Client → Controller → Service → Repository → Database
-
-
-This ensures modular, testable, and scalable code.
-
-⚙️ How to Run the Project
-🔧 Step 1: Clone the repo
+### 1. Clone the repository
+```
 git clone https://github.com/<your-username>/inventoryManagementBackend.git
 cd inventoryManagementBackend
+```
 
-📦 Step 2: Build & Run
+### 2. Run the application
+```
 mvn spring-boot:run
+```
 
-
-Or open the project in your IDE and run:
-
-InventoryManagementApplication.java
-
-🌐 Step 3: Access the API
-
-Open Postman or browser:
-
+### 3. Access the API
+```
 http://localhost:8080/products
+```
 
+## Database Configuration
 
-🎉 You're live!
-
-🛢️ Database Setup
-Default: H2 In-Memory DB
-
-Inside application.properties:
-
+### H2 Default DB
+```
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.h2.console.enabled=true
+```
 
-
-H2 Console available at:
-
-http://localhost:8080/h2-console
-
-OR Use MySQL
+### MySQL Configuration
+```
 spring.datasource.url=jdbc:mysql://localhost:3306/inventorydb
 spring.datasource.username=root
 spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
+```
 
-📝 Example Product JSON
+## Sample JSON
+```
 {
   "name": "Laptop",
   "quantity": 10,
   "price": 55000
 }
+```
 
-⭐ This Project Is Demonstrates:
+## Author
 
-Realistic Spring Boot project structure
-
-Uses MVC + Service + Repository (industry standard)
-
-Perfect demonstration of API building
-
-Shows hands-on experience with backend development
-
-Clean, modular, and scalable architecture
-
-🙌 Author
-
-👤 Anurag Upadhyay
-🔗 GitHub: https://github.com/Uanuragdhyay
+**Anurag Upadhyay**  
+GitHub: https://github.com/Uanuragdhyay
