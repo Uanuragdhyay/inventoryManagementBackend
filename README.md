@@ -13,6 +13,7 @@ Welcome to the Inventory Management Backend — a lightweight yet powerful REST 
 | 🧪 **JUnit**            | Testing framework               |
 
 📁 Project Structure (Easy & Understandable)
+
 src/
  └── main/
      ├── java/com/example/inventory_management/
