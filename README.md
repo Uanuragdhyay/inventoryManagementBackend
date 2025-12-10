@@ -4,12 +4,14 @@
 Welcome to the Inventory Management Backend — a lightweight yet powerful REST API built using Spring Boot, perfect for learning backend development or showcasing clean project structure in your portfolio.
 
 🌈 Tech Stack
-Technology	Description
-☕ Java	Main programming language
-🌱 Spring Boot	Backend framework
-🗄️ Spring Data JPA	ORM layer
-🛢️ H2 / MySQL	Database (depending on your configuration)
-🧪 JUnit	Testing framework
+| Technology              | Description                     |
+| ----------------------- | ------------------------------- |
+| ☕ **Java**              | Main programming language       |
+| 🌱 **Spring Boot**      | Backend framework               |
+| 🗄️ **Spring Data JPA** | ORM layer for database handling |
+| 🛢️ **H2 / MySQL**      | Database (configurable)         |
+| 🧪 **JUnit**            | Testing framework               |
+
 📁 Project Structure (Easy & Understandable)
 src/
  └── main/
@@ -25,8 +27,8 @@ src/
      │   └── InventoryManagementApplication.java
      │
      └── resources/
-          ├── application.properties
-          └── data.sql (optional)
+         ├── application.properties
+         └── data.sql   (optional)
 
 
 Each layer has a clear responsibility:
